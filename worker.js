@@ -195,7 +195,7 @@ ${messageDetails}
           await sendTelegramInvoice(chatId, amount);
       } 
       else if (message.text.startsWith('/paysupport')) {
-          await sendTelegramMessage(chatId, null, "Since it was a donation, we generally DO NOT offer refunds. However, if you believe you have sufficient reason to claim one, DM me @optimusprime123.", null);
+          await sendTelegramMessage(chatId, null, "Since it was a donation, we generally DO NOT offer refunds. However, if you believe you have sufficient reason to claim one, DM me @waspros.", null);
       } 
       else { //handle user messages - no biz connection id 
         if (message.text.startsWith('/set')) { 
