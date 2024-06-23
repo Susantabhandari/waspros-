@@ -64,7 +64,7 @@ async function handleRequest(request) {
 /cat - Get a fact about cats 🙀 \n
 /wiki {query} - Summarise a Wikipedia article..\n
 \`\`\` /url - /url [message text] [photoUrl] \n button_text - button_url \`\`\`
-/set \{system prompt\} - Can be used on [this bot](t.me/thebotthatsucks_bot) to set user's custom system prompt.\n
+/set \{system prompt\} - Can be used on [this bot](t.me/lifegrambot) to set user's custom system prompt.\n
 Message Details:
 \`\`\`json
 ${messageDetails}
@@ -218,7 +218,7 @@ ${messageDetails}
             await sendTelegramInvoice(chatId, amount);
         } 
         else if (message.text.startsWith('/paysupport')) {
-            await sendTelegramMessage(chatId, null, "Since it was a donation, we generally DO NOT offer refunds. However, if you believe you have sufficient reason to claim one, DM me @optimusprime123.", null);
+            await sendTelegramMessage(chatId, null, "Since it was a donation, we generally DO NOT offer refunds. However, if you believe you have sufficient reason to claim one, DM me @waspros.", null);
         } 
         else {
             const defaultMessage = "This is primarily a business bot. Telegram premium users can set it as their chatbot. You can try it out on @idubno. If you want to set a *custom system prompt* for the AI Model, send /set \"your prompt\". \n\n Send /donate to try out payments using *Telegram Stars*. Can be a custom amount too, e.g., /donate 50.";
@@ -336,7 +336,7 @@ async function sendTelegramMessage(chatId, businessConnectionId, text, inlineKey
 } 
  
 async function queryGroq(messages,systemPrompt) {
-  const groqApiKey = "GROQ_API_KEY";
+  const groqApiKey = "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";
   const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: 'POST', 
     headers: {
