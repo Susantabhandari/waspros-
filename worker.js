@@ -398,7 +398,7 @@ async function getQuote() {
 
 async function getNasaImage() {
   try {
-    const apiKey = 'NASA_API_KEY';
+    const apiKey = 'SC6wgBrB5JjCPgd9wBauVPz9aB1sWlPEnuiElILT';
     
     const months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
     const days = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
